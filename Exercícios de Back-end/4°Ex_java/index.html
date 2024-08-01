@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo círculo</title>
+</head>
+<body>
+    <p> Insira o diâmetro da circunferência:
+        <input type="text" name="diaM" id="diaM">
+    </p>
+
+    <button type="button" onclick="raio()">Calcular</button>
+
+    <script>
+        function raio(){
+            var d = document.querySelectorAll('input')[0].value
+            var r = (d / 2)
+
+            alert('O raio da circunferência é: ' + r + 'cm')
+        }
+    </script>
+    
+</body>
+</html>

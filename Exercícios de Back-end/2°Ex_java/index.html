@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+<body>
+
+    <p>Insira o ano atual:
+        <input type="text" name="atual" id="atual">
+    </p>
+
+
+    <p>Insira seu ano de nascimento:
+        <input type="text" name="data" id="data">
+    </p>
+
+    <button onclick="calcID()" type="button">Confirmar</button>
+
+    <script>
+    function calcID(){
+        var atual = document.querySelectorAll('input')[0].value;
+        var data = document.querySelectorAll('input')[1].value;
+
+        var calc = (atual - data)
+        var boomer = ("você tem: " + calc + ' anos' )
+        alert(boomer)
+
+    }
+    </script>
+</body>
+</html>

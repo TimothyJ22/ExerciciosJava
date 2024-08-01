@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body style="background-color: slategray;">
+    <h1>Formulário brabo</h1>
+    <form id="formu">
+
+        <p>
+            <label for="nom">Nome</label>
+            <input type="text" name="nom" id="nom">
+        </p>
+
+        <p>
+            <label for="tel">Telefone</label>
+            <input type="tel" name="tel" id="tel">
+        </p>
+
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </p>
+    
+        <button type="submit" onclick="submit()">Submit</button>
+
+        <script>
+            function submit(){
+            document.getElementById('formu').addEventListener('submit', function(event) {
+    var nome = document.getElementById('nome').value;
+    
+    if (!nome) {
+        alert('Por favor, preencha a caixa de texto.');
+        event.preventDefault(); 
+    }
+});
+
+    document.getElementById('formu').addEventListener('submit', function(event) {
+    var nome = document.getElementById('tel').value;
+    
+    if (!tel) {
+        alert('Por favor, preencha a caixa de texto.');
+        event.preventDefault(); 
+    }
+});
+    
+    document.getElementById('formu').addEventListener('submit', function(event) {
+    var nome = document.getElementById('email').value;
+    
+    if (!email) {
+        alert('Por favor, preencha a caixa de texto.');
+        event.preventDefault(); 
+    }
+});
+}
+
+        </script>
+</body>
+</html>

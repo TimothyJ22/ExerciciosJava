@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xurrasco show de bola</title>
+</head>
+<body>
+    <h1>Churrasção de final de ano</h1>
+    <br>
+    <h2>Aqui será listado o que cada pessoa deverá trazer e sua quantidade respectiva.</h2>
+    <ul>
+        <li>Carne (300g)</li>
+        <li>Linguiças (150g)</li>
+        <li>Extras (pão de alho, coração de frango, etc... (150g))</li>
+    </ul>
+
+    <p>Relembrando, essa quantia é <strong>por pessoa</strong>.</p>
+    <button type="button" onclick="xurras()">Quantidade total</button>
+
+    <script>
+        function xurras(){
+            var n1 = 0.3
+            var n2 = 0.15
+            var n3 = 0.15
+            var n4 = 30
+
+            var calc = (n1 + n2 + n3) * n4
+            alert("A quantidade total de comida para o churras é: " + calc + 'Kg')
+        }
+    </script>
+</body>
+</html>

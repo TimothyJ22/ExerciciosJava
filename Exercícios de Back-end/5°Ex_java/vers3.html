@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xurras show de bola3</title>
+</head>
+<body>
+    <h1>Churrascão bueno</h1>
+    <br>
+<p>Informe quantas pessoas irão:
+    <input type="number" name="carnin" id="carnin">
+</p>
+
+<button type="button" onclick="domingoAtarde()">Calcular</button>
+
+<script>
+    function domingoAtarde(){
+        var p = document.querySelectorAll('input')[0].value
+        var c = 0.3
+        var l = 0.15
+        var i = 0.15
+        var calc = (p * c) + (p * l) + (p * i)
+        var calcint = parseInt(calc)
+
+        alert("A quantidade total que será necessário levar é: " + calcint + 'Kg')
+    }
+</script>
+</body>
+</html>

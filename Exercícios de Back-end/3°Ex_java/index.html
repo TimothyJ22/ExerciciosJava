@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar</title>
+</head>
+<body>
+    <p>Insira seu ano de nascimento:
+        <input type="text" name="idade" id="idade">
+    </p>
+
+    <p>Insira o ano atual:
+        <input type="text" name="atu" id="atu">
+    </p>
+
+    <button type="button" onclick="calc()">Calcular</button>
+
+    <script>
+        function calc(){
+            var ida = document.querySelectorAll('input')[0].value;
+            var atu = document.querySelectorAll('input')[1].value;
+
+            var boomer = (atu - ida);
+            if (boomer < 18)
+            alert('Você tem ' + boomer + ' anos, não está em maioridade penal')
+            else 
+            alert('Você tem ' + boomer + ' anos, está em maioridade penal')
+        }
+    </script>
+</body>
+</html>

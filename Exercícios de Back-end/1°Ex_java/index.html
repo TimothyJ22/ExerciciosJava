@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome e Sobrenome</title>
+</head>
+<body>
+    <p>Informe seu primeiro nome: 
+        <input type="text" name="nome" id="nome">
+    </p>
+
+    <p>Informe o nome do meio: 
+        <input type="text" name="nome2" id="nome2">
+    </p>
+
+    <p>Informe o último nome: 
+        <input type="text" name="nome3" id="nome3">
+    </p>
+
+
+    <p>Insira o ano atual:
+        <input type="text" name="atual" id="atual">
+    </p>
+
+
+    <p>Insira seu ano de nascimento:
+        <input type="text" name="data" id="data">
+    </p>
+
+    <button onclick="nomeint()" type="button">Confirmar</button>
+
+    <script>
+    function nomeint(){
+        var nome = document.querySelectorAll('input')[0].value;
+        var nome2 = document.querySelectorAll('input')[1].value;
+        var nome3 = document.querySelectorAll('input')[2].value;
+        var atual = document.querySelectorAll('input')[3].value;
+        var data = document.querySelectorAll('input')[4].value;
+
+        var calc = (atual - data)
+        var nomecomp = (nome + ' ' + nome2 + ' ' + nome3 + ', ' + "você tem: " + calc + ' anos' )
+        alert(nomecomp)
+
+    }
+    </script>
+</body>
+</html>

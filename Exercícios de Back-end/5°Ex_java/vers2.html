@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xurras show de bola2</title>
+</head>
+<body>
+    <h1>Churrascão bueno</h1>
+    <br>
+<p>Informe quantas pessoas irão:
+    <input type="number" name="carnin" id="carnin">
+</p>
+
+<p>Informe o tipo de proteína (1 para frango e 2 para carne):
+    <input type="number" name="prot" id="prot">
+</p>
+
+<p>Informe se você irá querer levar algum insumo a mais (1 para sim e 2 para não):
+    <input type="number" name="ins" id="ins">
+</p>
+
+<button type="button" onclick="xurras()">Calcular</button>
+
+<script>
+    function xurras(){
+        p = document.querySelectorAll('input')[0].value
+
+        if (document.querySelectorAll('input')[1].value == 1)
+        var n2 = (p * 0.15)
+        if (document.querySelectorAll('input')[1].value == 2)
+        var n2 = (p * 0.3)
+
+        if (document.querySelectorAll('input')[2].value = 1)
+        var n3 = (p * 0.15)
+        else
+        var calc = (n2 + n3)
+        alert("O total que será necessário levar é: " + calc + 'Kg')
+
+    }
+</script>
+</body>
+</html>
